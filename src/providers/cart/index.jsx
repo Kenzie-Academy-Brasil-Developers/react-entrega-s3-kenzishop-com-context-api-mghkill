@@ -6,22 +6,17 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState(
     JSON.parse(localStorage.getItem("@Cart:products")) || []
   );
+
   const addCart = (itemObj, count) => {
     itemObj.amout = count;
     itemObj.price = itemObj.price * count;
-
-    // const getStorage = JSON.parse(localStorage.getItem("@Cart:products")) || [];
     const updateObj = [...cart, itemObj];
-
     localStorage.setItem("@Cart:products", JSON.stringify(updateObj));
     setCart(updateObj);
   };
 
   const removeCart = (itemObj) => {
-    // const getStorage = JSON.parse(localStorage.getItem("@Cart:products")) || [];
-
     const updateObj = cart.filter((item) => item.id !== itemObj.id);
-
     localStorage.setItem("@Cart:products", JSON.stringify(updateObj));
     setCart(updateObj);
   };

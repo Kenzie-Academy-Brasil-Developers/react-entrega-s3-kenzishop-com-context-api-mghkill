@@ -3,14 +3,14 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
-import { CartProvider } from "./providers/cart";
+import { Providers } from "./providers";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <CartProvider>
+      <Providers>
         <App />
-      </CartProvider>
+      </Providers>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
