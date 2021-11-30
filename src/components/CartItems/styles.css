@@ -1,0 +1,12 @@
+.cart-list {
+  position: relative;
+  max-width: 300px;
+  margin: 12px auto;
+}
+.amount {
+  color: white;
+  border-radius: 32px;
+  position: absolute;
+  top: 82%;
+  left: 10%;
+}

@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+}
+.App-cart {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.App-cart svg {
+  font-size: 32px;
+  position: relative;
+  color: #fcb22a;
+}
+.App-cart div {
+  background-image: linear-gradient(to right, #6cd65f 0%, #6cd65f 100%);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  color: #1f1f1f;
+  z-index: 1;
+  right: 3px;
+  top: 0px;
+  font-size: medium;
+}
+.Toastify {
+  font-size: medium;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 80vh;
+  box-shadow: 24;
+  padding: 4;
+  overflow: scroll;
+}
+.modal-left {
+  width: 100%;
+  color: #57c5f9;
+  text-align: center;
+}
+.modal-right {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 150px;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  z-index: 1;
+}
+.App-conteiner {
+  width: 80%;
+  max-width: 1400px;
+}
+.App-conteiner div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 12px auto;
+}
+
+.App-box {
+  display: flex;
+  justify-content: center;
+  background-color: #1f1f1f;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@media (min-width: 600px) {
+  .modal {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .modal-left {
+    width: 50%;
+    height: 80vh;
+  }
+  .modal-right {
+    width: 50%;
+    height: 80vh;
+  }
+}

@@ -1,0 +1,9 @@
+.conteiner-list {
+  position: relative;
+}
+.input-list {
+  width: 40px;
+  top: 74%;
+  margin: 12px auto;
+  position: absolute;
+}
